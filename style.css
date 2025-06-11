@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    background-color: whitesmoke;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    align-self: center;
+    color: darkslategray;
+    font-size: 2rem;
+    font-weight: 370;
+}
+
+.title {
+    color: darkslategray;
+    font-size: 1.5rem;
+    font-weight: 350;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    color: darkslategray;
+    font-size: 1.2rem;
+    font-weight: 330;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.btn-size,
+.btn-color {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.btn-size button,
+.btn-color button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    min-width: 35px;
+}
+
+.text {
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.separator {
+    flex-grow: 1;
+    height: 1px;
+    background-color: gray;
+    margin: 10px 0;
+}
+
+.text1 {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.textInputWrapper {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.textInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.textInputRow {
+    display: flex;
+    gap: 10px;
+}
+
+.textInput input {
+    flex: 1;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+.clearBtnVertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 175px;
+    height: 100%;
+}
+
+.textInput button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.container {
+    display: flex;
+    gap: 110px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: stretch;
+    width: 48%;
+    min-width: 300px;
+}
+
+.calculator-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.calculator-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: darkslategray;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+}
+
+input:focus {
+    outline: 2px solid steelblue;
+}
+
+.btn-calc {
+    width: 80px;
+}
+
+.row span {
+    display: inline-block;
+    min-width: 20px;
+    text-align: center;
+}
+
+.result {
+    display: inline-block;
+    min-width: 30px;
+    text-align: left;
+}
+
+/* ✅ Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .calculator,
+    .palindrome {
+        width: 100%;
+    }
+
+    .textInputWrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .clearBtnVertical {
+        writing-mode: horizontal-tb;
+        transform: none;
+        width: 100%;
+    }
+}

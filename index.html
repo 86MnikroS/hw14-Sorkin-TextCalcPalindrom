@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TextCalcPalindrom</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>HW14 Sorkin</header>
+    <h1 class="title">This application includes text adjuster, calculator and palindrome checker</h1>
+    <h2 class="subtitle">Application is very simple. Just enter values and push the buttons)</h2>
+    <div class="buttons">
+        <div class="btn-size">
+            <button id="btn1">15px</button>
+            <button id="btn2">25px</button>
+            <button id="btn3">35px</button>
+        </div>
+        <div class="btn-color">
+            <button id="btn4">red</button>
+            <button id="btn5">green</button>
+            <button id="btn6">blue</button>
+        </div>
+    </div>
+
+    <div class="text">
+        <p id="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur delectus
+            deleniti dignissimos dolore, ducimus eum explicabo fugit illo illum in minima necessitatibus nobis numquam
+            obcaecati odio perspiciatis placeat ratione saepe sit tenetur unde voluptatem. Dolorem dolores est expedita
+            impedit in ipsam, magni nulla omnis quaerat quisquam similique voluptate. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Aut dolores harum laboriosam neque perferendis reiciendis repellendus. A
+            aspernatur consectetur ea labore, mollitia quasi quia temporibus! A consequuntur dolorem dolores rem
+            repellat repellendus tempore unde! Eos magnam maiores officiis suscipit voluptatum. Alias assumenda ducimus
+            nam porro, quasi sint voluptas. Ab aperiam cum deleniti dicta ipsum molestiae nesciunt soluta voluptate!
+            Aliquam, dignissimos dolor laborum magni molestiae nemo similique tempore! Aliquid asperiores beatae
+            blanditiis consequuntur cupiditate delectus deleniti dignissimos ducimus eveniet facilis illum ipsa iure
+            labore laboriosam laborum nihil nisi praesentium provident quas, quibusdam quisquam, recusandae tempore. Ad
+            cum deleniti eius eveniet tempore!
+        </p>
+        <div class="separator"></div>
+    </div>
+
+    <div class="textInput">
+        <div class="textInputRow">
+            <input type="text" class="text-size-in" placeholder="Size">
+            <button id="btn7">Set</button>
+        </div>
+        <div class="textInputRow">
+            <input type="text" class="text-color-in" placeholder="Color">
+            <button id="btn8">Set</button>
+        </div>
+        <button id="clearText" class="clearBtn">Clear</button>
+    </div>
+    <div class="text1">
+        <p id="text1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur delectus
+            deleniti dignissimos dolore, ducimus eum explicabo fugit illo illum in minima necessitatibus nobis numquam
+            obcaecati odio perspiciatis placeat ratione saepe sit tenetur unde voluptatem. Dolorem dolores est expedita
+            impedit in ipsam, magni nulla omnis quaerat quisquam similique voluptate. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Aut dolores harum laboriosam neque perferendis reiciendis repellendus. A
+            aspernatur consectetur ea labore, mollitia quasi quia temporibus! A consequuntur dolorem dolores rem
+            repellat repellendus tempore unde! Eos magnam maiores officiis suscipit voluptatum. Alias assumenda ducimus
+            nam porro, quasi sint voluptas. Ab aperiam cum deleniti dicta ipsum molestiae nesciunt soluta voluptate!
+            Aliquam, dignissimos dolor laborum magni molestiae nemo similique tempore! Aliquid asperiores beatae
+            blanditiis consequuntur cupiditate delectus deleniti dignissimos ducimus eveniet facilis illum ipsa iure
+            labore laboriosam laborum nihil nisi praesentium provident quas, quibusdam quisquam, recusandae tempore. Ad
+            cum deleniti eius eveniet tempore!
+        </p>
+        <div class="separator"></div>
+    </div>
+    <h3 id="h3">Calculator</h3>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator-layout">
+                <div class="calculator-body">
+                    <div class="row">
+                        <input type="number" class="num1">
+                        <span> + </span>
+                        <input type="number" class="num2">
+                        <button class="btn-calc">add</button>
+                        <span class="result">0</span>
+                    </div>
+                    <div class="row">
+                        <input type="number" class="num1">
+                        <span> - </span>
+                        <input type="number" class="num2">
+                        <button class="btn-calc">sub</button>
+                        <span class="result">0</span>
+                    </div>
+                    <div class="row">
+                        <input type="number" class="num1">
+                        <span> * </span>
+                        <input type="number" class="num2">
+                        <button class="btn-calc">multi</button>
+                        <span class="result">0</span>
+                    </div>
+                    <div class="row">
+                        <input type="number" class="num1">
+                        <span> / </span>
+                        <input type="number" class="num2">
+                        <button class="btn-calc">div</button>
+                        <span class="result">0</span>
+                    </div>
+                </div>
+            </div>
+            <button id="clearAll" class="clearBtnVertical">Clear</button>
+        </div>
+
+        <div class="palindrome">
+            <h3>Palindrome Checker</h3>
+            <input type="text" id="wordInput" placeholder="Enter a word">
+            <button id="checkPalindrome">Check</button>
+            <p id="palindromeResult"></p>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
